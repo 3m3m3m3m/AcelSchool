@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #e6ecf0; /* Soft background color for the entire site */
+    background: #f4f6f9; /* Subtle and consistent background for all pages */
     color: #333;
     line-height: 1.6;
 }
@@ -56,21 +56,24 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Match header */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Unified gradient */
     color: white;
     text-align: center;
     padding: 60px 20px;
-    position: relative;
-    margin-bottom: 40px;
+    height: 100vh; /* Make hero section fill the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Larger text for more impact */
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Larger text for readability */
     margin-bottom: 30px;
 }
 
@@ -79,7 +82,7 @@ nav ul li a:hover {
     color: white;
     padding: 15px 30px;
     border-radius: 25px;
-    font-size: 1em;
+    font-size: 1.2em; /* Slightly larger button */
     transition: background-color 0.3s ease;
 }
 
@@ -89,13 +92,11 @@ nav ul li a:hover {
 
 /* Features Section */
 .features {
+    background: #f4f6f9; /* Ensure it matches the rest of the site */
+    padding: 40px 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 40px 20px;
-    background: #f4f6f9; /* Subtle variation to main background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
 }
 
 .feature {
@@ -127,11 +128,10 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Match header */
+    background: #2a5298; /* Solid color for footer to stand out yet integrate */
     color: white;
     text-align: center;
     padding: 15px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
 }
 
