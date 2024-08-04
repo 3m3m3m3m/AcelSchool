@@ -1,10 +1,9 @@
-
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: #e6ecf0; /* Soft background color for the entire site */
     color: #333;
     line-height: 1.6;
 }
@@ -16,21 +15,21 @@ a {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Modern gradient background */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Unified gradient */
     color: white;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Center elements vertically */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
 .logo img {
     width: 100px;
     height: auto;
-    margin-bottom: 10px; /* Add space between logo and navigation */
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -38,8 +37,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Space between navigation items */
-    justify-content: center; /* Center navigation items */
+    gap: 20px;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -48,22 +47,21 @@ nav ul li a {
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.1); /* Slight background for buttons */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Change on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Match header */
+    color: white;
     text-align: center;
     padding: 60px 20px;
-    color: white;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -95,13 +93,19 @@ nav ul li a:hover {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 40px 20px;
-    background-color: #ffffff;
+    background: #f4f6f9; /* Subtle variation to main background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .feature {
     text-align: center;
     margin: 20px;
     flex-basis: 30%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .feature img {
@@ -123,13 +127,14 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #004494;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Match header */
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px; /* Add space before the footer */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate from content */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
