@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f6f9; /* Subtle and consistent background for all pages */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Seamless blue gradient */
     color: #333;
     line-height: 1.6;
 }
@@ -92,11 +92,15 @@ nav ul li a:hover {
 
 /* Features Section */
 .features {
-    background: #f4f6f9; /* Ensure it matches the rest of the site */
+    background: transparent; /* Allow the global gradient to show through */
     padding: 40px 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.feature h2, .feature p {
+    color: white;
 }
 
 .feature {
