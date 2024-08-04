@@ -17,18 +17,21 @@ a {
 /* Header and Navigation */
 /* Header and Navigation */
 header {
-    background-color: #005bb5; /* Darker shade for a more modern look */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Modern gradient background */
     color: white;
-    padding: 15px 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    justify-content: center;
+    flex-direction: column; /* Center elements vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
 }
 
 .logo img {
     width: 100px;
     height: auto;
+    margin-bottom: 10px; /* Add space between logo and navigation */
 }
 
 nav ul {
@@ -37,20 +40,21 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px; /* Space between navigation items */
+    justify-content: center; /* Center navigation items */
 }
 
 nav ul li a {
     color: white;
-    padding: 8px 12px;
+    padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background for buttons */
 }
 
 nav ul li a:hover {
-    background-color: #004494;
-    color: #ffcc00; /* Highlight text with a contrasting color */
+    background-color: rgba(255, 255, 255, 0.2); /* Change on hover */
 }
-
 
 /* Hero Section */
 .hero {
