@@ -15,41 +15,42 @@ a {
 }
 
 /* Header and Navigation */
+/* Header and Navigation */
 header {
-    background-color: #0066cc;
+    background-color: #005bb5; /* Darker shade for a more modern look */
     color: white;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .logo img {
-    width: 120px;
+    width: 100px;
+    height: auto;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
 }
 
 nav ul li a {
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
     background-color: #004494;
+    color: #ffcc00; /* Highlight text with a contrasting color */
 }
+
 
 /* Hero Section */
 .hero {
@@ -122,10 +123,9 @@ footer {
     background-color: #004494;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
+    margin-top: 40px; /* Add space before the footer */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate from content */
 }
 
 /* Responsive Design */
